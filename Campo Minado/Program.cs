@@ -13,6 +13,9 @@ namespace Campo_Minado
         static void Main()
         {
             Screens s = new Screens();
+
+            Console.CursorVisible = false;
+            s.fishnair();
             s.iniciarJogo();
 
         }

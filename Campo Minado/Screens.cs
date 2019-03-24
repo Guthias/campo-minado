@@ -15,6 +15,67 @@ namespace Campo_Minado
         ConsoleColor corPrincipal = ConsoleColor.Blue;
         ConsoleColor corSecundaria = ConsoleColor.White;
 
+        public void fishnair()
+        {
+
+            string[] linhas = new string[24] {
+                "______  _____  _____  _   _  _   _   ___  _____ ______ ",
+                "|  ___||_   _|/  ___|| | | || \\ | | / _ \\|_   _|| ___ \\",
+                "| |_     | |  \\ `--. | |_| ||  \\| |/ /_\\ \\ | |  | |_/ /",
+                "| |_     | |  \\ `--. | |_| ||  \\| |/ /_\\ \\ | |  | |_/ /",
+                "|  _|    | |   `--. \\|  _  || . ` ||  _  | | |  |    / ",
+                "| |     _| |_ /\\__/ /| | | || |\\  || | | |_| |_ | |\\ \\ ",
+                "\\_|     \\___/ \\____/ \\_| |_/\\_| \\_/\\_| |_/\\___/ \\_| \\_|",
+                "             ______       ",
+                "           _/  (   \\_     ",
+                " _       _/  (       \\_   ",
+                "| \\_   _/  (   (    0  \\  ",
+                "|== \\_/  (   (          | ",
+                "|=== _ (   (   (        | ",
+                "|==_/ \\_ (   (          | ",
+                "|_/     \\_ (   (    \\__/  ",
+                "          \\_ (      _/    ",
+                "            |  |___/      ",
+                "           /__/           ",
+                " _____ _________________ ___________ _____ ___ _____ _____ _   __ ",
+                "/  __ \\  _  | ___ \\ ___ \\  _  | ___ \\/ _ \\_   _|_   _|  _  | \\ | |",
+                "| /  \\/ | | | |_/ / |_/ / | | | |_/ / /_\\ \\| |   | | | | | |  \\| |",
+                "| |   | | | |    /|  __/| | | |    /|  _  || |   | | | | | | . ` |",
+                "| \\__/\\ \\_/ / |\\ \\| |   \\ \\_/ / |\\ \\| | | || |  _| |_\\ \\_/ / |\\  |",
+                " \\____/\\___/\\_| \\_\\_|    \\___/\\_| \\_\\_| |_/\\_/  \\___/ \\___/\\_| \\_/",
+                };
+
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("");
+            for (int c = 0; c < 24; c++)
+            {
+                f.centralizar($"{linhas[c]}");
+                System.Threading.Thread.Sleep(135);
+                if(c == 6)
+                {
+                    
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.DarkYellow;
+                }
+                else if(c == 17)
+                {
+                    Console.WriteLine();
+                    Console.ForegroundColor = ConsoleColor.Blue;
+                }
+            }
+
+            System.Threading.Thread.Sleep(2000);
+            Console.Clear();
+            Console.SetCursorPosition((Console.WindowWidth) / 2, (Console.WindowHeight - 5) / 2);
+            f.centralizar("   _                                         _          ");
+            f.centralizar("  /_\\   _ __   _ __   ___  ___   ___  _ __  | |_   __ _ ");
+            f.centralizar(" //_\\\\ | '_ \\ | '__| / _ \\/ __| / _ \\| '_ \\ | __| / _` |");
+            f.centralizar("/  _  \\| |_) || |   |  __/\\__ \\|  __/| | | || |_ | (_| |");
+            f.centralizar("\\_/ \\_/| .__/ |_|    \\___||___/ \\___||_| |_| \\__| \\__,_|");
+            f.centralizar("       |_|                                              ");
+            System.Threading.Thread.Sleep(1500);
+        }
+
         public void inicio_1()
         {
             Console.Clear();
