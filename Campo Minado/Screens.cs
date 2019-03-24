@@ -80,6 +80,7 @@ namespace Campo_Minado
         {
             Console.Clear();
             Console.ForegroundColor = corSecundaria;
+            Console.WriteLine("");
             f.centralizar(" _____                              ___  ____                 _       ");
             f.centralizar("/  __ \\                             |  \\/  (_)               | |      ");
             f.centralizar("| /  \\/ __ _ _ __ ___  _ __   ___   | .  . |_ _ __   __ _  __| | ___  ");
@@ -108,8 +109,8 @@ namespace Campo_Minado
         public void inicio_2()
         {
             Console.Clear();
-
             Console.ForegroundColor = corSecundaria;
+            Console.WriteLine("");
             f.centralizar(" _____                              ___  ____                 _       ");
             f.centralizar("/  __ \\                             |  \\/  (_)               | |      ");
             f.centralizar("| /  \\/ __ _ _ __ ___  _ __   ___   | .  . |_ _ __   __ _  __| | ___  ");
@@ -139,6 +140,7 @@ namespace Campo_Minado
         {
             Console.Clear();
             Console.ForegroundColor = corSecundaria;
+            Console.WriteLine("");
             f.centralizar(" _____                              ___  ____                 _       ");
             f.centralizar("/  __ \\                             |  \\/  (_)               | |      ");
             f.centralizar("| /  \\/ __ _ _ __ ___  _ __   ___   | .  . |_ _ __   __ _  __| | ___  ");
@@ -169,6 +171,7 @@ namespace Campo_Minado
         {
             Console.Clear();
             Console.ForegroundColor = corSecundaria;
+            Console.WriteLine("");
             f.centralizar(" _____                              ___  ____                 _       ");
             f.centralizar("/  __ \\                             |  \\/  (_)               | |      ");
             f.centralizar("| /  \\/ __ _ _ __ ___  _ __   ___   | .  . |_ _ __   __ _  __| | ___  ");
@@ -417,11 +420,11 @@ namespace Campo_Minado
                     {
                         telaConfig++;
                     }
-                    else if (keyPress.Key == ConsoleKey.RightArrow && telaConfig == 1)
+                    else if (keyPress.Key == ConsoleKey.RightArrow && telaConfig == 1 && numeroDeBombas < 60)
                     {
                         numeroDeBombas++;
                     }
-                    else if (keyPress.Key == ConsoleKey.LeftArrow && telaConfig == 1)
+                    else if (keyPress.Key == ConsoleKey.LeftArrow && telaConfig == 1 && numeroDeBombas > 1)
                     {
                         numeroDeBombas--;
                     }
