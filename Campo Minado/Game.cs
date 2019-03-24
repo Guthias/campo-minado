@@ -240,12 +240,12 @@ namespace Campo_Minado
 
                     else if (moves[y, x] == 1 && campo[y, x] == -1)
                     {
-                        linha = linha + "║ * ";
+                        linha = linha + "║ ■ ";
                     }
 
                     else if (moves[y, x] == 2)
                     {
-                        linha = linha + "║ ! ";
+                        linha = linha + "║ ¶ ";
                     }
 
                     else
